@@ -8,36 +8,43 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>The Big Picture - Start Bootstrap Template</title>
+  <title>InfInITy 2k19</title>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/the-big-picture.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="css/infinity2k19.css" rel="stylesheet">
+
+
   <script>
-  var deadline = new Date(2019,10,20,18);
-    
-  function updateClock(){
-  var today = Date();
-  var diff = Date.parse(deadline) - Date.parse(today);
-    if(diff<=0){
-      clearInterval(interval);
-    }
-    else{
-  var seconds = Math.floor((diff/1000)%60);
-  var minutes = Math.floor((diff/1000/60)%60);
-  var hours = Math.floor((diff/1000/60/60)%24);
-  var days = Math.floor(diff/(1000*60*60*24)%30.5);
-  var months = Math.floor(diff/(1000*60*60*24*30.5)%12);
-    
-     $("#months").text(('0'+months).slice(-2));
-     $("#days").text(('0'+days).slice(-2));
-     $("#hours").text(('0'+hours).slice(-2));
-     $("#minutes").text(('0'+minutes).slice(-2));
-     $("#seconds").text(('0'+seconds).slice(-2));
-    
-    }//EOF ELSE
-  
-  }//EOF FUNCTION
- var interval = setInterval(updateClock,1000);
-</script>
+    var deadline = new Date(2019, 10, 20, 18);
+
+    function updateClock() {
+      var today = Date();
+      var diff = Date.parse(deadline) - Date.parse(today);
+      if (diff <= 0) {
+        clearInterval(interval);
+      }
+      else {
+        var seconds = Math.floor((diff / 1000) % 60);
+        var minutes = Math.floor((diff / 1000 / 60) % 60);
+        var hours = Math.floor((diff / 1000 / 60 / 60) % 24);
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24) % 30.5);
+        var months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30.5) % 12);
+
+        $("#months").text(('0' + months).slice(-2));
+        $("#days").text(('0' + days).slice(-2));
+        $("#hours").text(('0' + hours).slice(-2));
+        $("#minutes").text(('0' + minutes).slice(-2));
+        $("#seconds").text(('0' + seconds).slice(-2));
+
+      }//EOF ELSE
+
+    }//EOF FUNCTION
+    var interval = setInterval(updateClock, 1000);
+  </script>
+
+  <script src="js/titleicon.js"></script>
 
 </head>
 
@@ -46,31 +53,32 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
     <div class="container">
-      <a class="navbar-brand" href="#" ><strong>InfInITy 2k19</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><strong>InfInITy 2k19</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#Home"><strong>Home</strong>
+            <a class="nav-link" href="#home"><strong>Home</strong>
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>About</strong></a>
+            <a class="nav-link" href="#about"><strong>About</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>Stats</strong></a>
+            <a class="nav-link" href="#stats"><strong>Stats</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>Registration</strong></a>
+            <a class="nav-link" href="#registration"><strong>Registration</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>Previous Winners</strong></a>
+            <a class="nav-link" href="#winners"><strong>Previous Winners</strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>Previous Problems</strong></a>
+            <a class="nav-link" href="#team"><strong>The Team</strong></a>
           </li>
         </ul>
       </div>
@@ -78,8 +86,8 @@
   </nav>
 
   <!-- Page Content -->
-  <section id="Home">
-    <div class="container">
+  <section id="home">
+    <div class="container" style="height: 100vh;">
       <div class="row">
         <div class="col-lg-6">
           <!-- <h1 class="mt-5">The Big Picture</h1>
@@ -90,56 +98,114 @@
   </section>
 
   <!-- About - Rohan Lekhwani -->
-  <section>
+  <section id="about">
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">About</h2>
+        </div>
+      </div>
+      <div class="row" style="margin-top:60px;">
+
+        <p style="font-family: 'Roboto Slab', serif;">
+          InfInITy is IIIT Pune's annual flagship coding contest hosted every year on Codechef. A 3 hour coding contest
+          that's guaranteed to get your head itching and your heart wanting more. InfInITy started in 2017 and
+          was limited only to IIIT Pune. Last year, InfInITy was made open to everyone and witnessed more than 2000
+          submissions all over the globe within 3 hours. <strong>Himanshu Jaju (Google) was the global winner last
+            year.</strong>
+        </p>
+
+        <p style="font-family: 'Roboto Slab', serif;">The contest follows ACM style scoring and consists of problems
+          designed for particpants ranging from
+          beginners to experts. Anyone having a knack for coding is encouraged to participate.</p>
+
+        <p style="font-family: 'Roboto Slab', serif;"><strong>Follow us on: </strong>
+          <!-- Add font awesome icons -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-android"></a>
+        </p>
+      </div>
+
+      <!-- TODO: Insert number of problems, date and time for this year -->
+
+    </div>
 
 
   </section>
-  <!-- Countdown Stats - Yashodhan Agnihotri 
-<div class = "countdown">
-      	<div id="timer">
-        <div id="clock">
-		<div class="block">
-          <span class="digit" id="months" ></span>
-            <p style="color:white;">Months</p>
-          </div>
-        <div class="block">
-          <span class="digit" id="days" ></span>
-            <p style="color:white;">Days</p>
-          </div>
-          <div class="block">
-            <span class="digit" id="hours"></span>
-              <p style="color:white">Hours</p>
-          </div>
-          <div class="block" >
-            <span class="digit" id="minutes"></span>
-              <p style="color:white">Minutes</p>
-          </div>
-  
-          <div class="block">
-            <span class="digit" id="seconds"></span>
-            <p style="color:white">Seconds</p>
-        </div>
-      	</div>
-		</div>
-	</div>
-  -->
-  <section>
+  <!-- Countdown Stats - Yashodhan Agnihotri -->
+  <section id="stats">
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Stats</h2>
 
+          <!-- <div class = "countdown">
+                  <div id="timer">
+                  <div id="clock">
+              <div class="block">
+                    <span class="digit" id="months" ></span>
+                      <p style="color:white;">Months</p>
+                    </div>
+                  <div class="block">
+                    <span class="digit" id="days" ></span>
+                      <p style="color:white;">Days</p>
+                    </div>
+                    <div class="block">
+                      <span class="digit" id="hours"></span>
+                        <p style="color:white">Hours</p>
+                    </div>
+                    <div class="block" >
+                      <span class="digit" id="minutes"></span>
+                        <p style="color:white">Minutes</p>
+                    </div>
+            
+                    <div class="block">
+                      <span class="digit" id="seconds"></span>
+                      <p style="color:white">Seconds</p>
+                  </div>
+                  </div>
+              </div>
+            </div> -->
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Registration and App advertisement - Rohan Lekhwani -->
-  <section>
+  <section id="registration">
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Registration</h2>
+        </div>
+      </div>
+    </div>
 
   </section>
 
-  <!-- Previous winners (World and college) - Anagha Ajnadkar -->
-  <section>
+  <!-- Previous winners (World, India and college) - Anagha Ajnadkar -->
+  <section id="winners">
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Winners</h2>
+        </div>
+      </div>
+    </div>
 
   </section>
 
-  <!-- Previous Problems - First come -->
-  <section>
-
+  <!-- Team - First come -->
+  <section id="team">
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">The Team</h2>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Bootstrap core JavaScript -->

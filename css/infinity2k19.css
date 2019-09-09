@@ -3,7 +3,7 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
-body {
+#home{
   background: url('../img/Throne_Background.jpg') no-repeat center center fixed;
   background-position: center;
   height: 100vh;
@@ -13,6 +13,40 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+
+.content{
+  margin: 70px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
 
 .block{
   display:inline-block;
