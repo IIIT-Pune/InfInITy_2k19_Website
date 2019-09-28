@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 #home{
   background: url('../img/Throne_Background.jpg') no-repeat center center fixed;
   background-position: center;
@@ -104,4 +108,15 @@ span.c-section4
   font-family: 'Roboto Slab', serif;
 }
 
+.fa-3x{
+  color: black;
+}
 
+@media only screen and (max-width:995px)
+{
+  .photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+  }
+}
