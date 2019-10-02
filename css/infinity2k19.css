@@ -2,22 +2,39 @@ html{
   scroll-behavior: smooth;
 }
 
-#home{
-  background: url('../img/Throne_Background.jpg') no-repeat center center fixed;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+@media only screen and (max-width: 600px) {
+    #home
+    {
+      background: url('../img/inf19mobile.jpg') no-repeat center center fixed;
+      background-position: center;
+    height: 100vh;
+    width: 100vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+  #home
+  {
+    background: url('../img/Throne_Background.jpg') no-repeat center center fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
 }
 
 .content{
   margin: 70px;
 }
 
-.fa {
+.fab {
   padding: 10px;
   font-size: 30px;
   width: 50px;
@@ -27,7 +44,7 @@ html{
   border-radius: 50%;
 }
 
-.fa:hover {
+.fab:hover {
   opacity: 0.7;
 }
 
@@ -44,11 +61,6 @@ html{
 .fa-android {
   background: #a4c639;
   color: white;
-}
-
-body
-{
-  background-color: #cbd8f7;
 }
 
 .block{
@@ -103,7 +115,6 @@ span.c-section4
 
 .counter-section 
 {
-  display:inline-block;
   width:30%;
   font-family: 'Roboto Slab', serif;
 }
@@ -120,3 +131,45 @@ span.c-section4
     justify-content: center;  
   }
 }
+
+.team
+{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+}
+
+#loading
+{
+  background: url('https://i.postimg.cc/Vv1Vfhhy/inf.gif') no-repeat center center;
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+/* Confetti loader - start */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+[class|="confetti"] {
+  position: absolute;
+}
+
+.red {
+  background-color: #E94A3F;
+}
+
+.yellow {
+  background-color: #FAA040;
+}
+
+.blue {
+  background-color: #5FC9F5;
+}
+/* Confetti loader - end */

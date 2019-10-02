@@ -15,7 +15,7 @@ $(function () {
             setTimeout(function () {
                 $this.data("isCounting", false);
                 count($this);
-            }, 2);
+            }, 1);
         }
     }
 
