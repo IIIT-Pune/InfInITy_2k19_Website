@@ -9,7 +9,7 @@ function showpreloader()
     navbar.style.visibility = 'hidden';
     body.style.overflow = 'hidden';
 
-    setTimeout(hidepreloader, 5000);
+    setTimeout(hidepreloader, 7000);
 }
 
 function hidepreloader()
