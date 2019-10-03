@@ -2,10 +2,10 @@ html{
   scroll-behavior: smooth;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1440px) {
     #home
     {
-      background: url('../img/inf19mobile.jpg') no-repeat center center fixed;
+      background: url('../img/Throne_Background.jpg') no-repeat center center fixed;
       background-position: center;
     height: 100vh;
     width: 100vw;
@@ -16,13 +16,13 @@ html{
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 800px) {
   #home
   {
-    background: url('../img/Throne_Background.jpg') no-repeat center center fixed;
+    background: url('../img/inf19mobile320.jpg') no-repeat center center fixed;
     background-position: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -30,8 +30,22 @@ html{
   }
 }
 
+/* @media only screen and (max-width: 320px) {
+  #home
+  {
+    background: url('../img/inf19mobile320.jpg') no-repeat center center fixed;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+} */
+
 .content{
-  margin: 70px;
+  margin-top: 70px;
 }
 
 .fab {
